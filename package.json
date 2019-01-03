@@ -1,0 +1,28 @@
+{
+  "name": "ffs-friends-family-suggestions",
+  "version": "1.0.0",
+  "description": "Web App - post and comment among friends and family on local area suggestions for food and activities",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artysidorenko/FFS-Friends-Family-Suggestions.git"
+  },
+  "keywords": [
+    "node",
+    "database",
+    "practice",
+    "project"
+  ],
+  "author": "Arty Sidorenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artysidorenko/FFS-Friends-Family-Suggestions/issues"
+  },
+  "homepage": "https://github.com/artysidorenko/FFS-Friends-Family-Suggestions#readme"
+}
