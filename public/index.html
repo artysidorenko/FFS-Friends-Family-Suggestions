@@ -3,24 +3,67 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>FFS - Friends & Family Suggestions</title>
+    <title>FFS - Homepage</title>
     <link href="styles.css" rel="stylesheet"/>
     <script src="index.js"></script>
   </head>
   <body>
     <header>
-      
+      <input type="checkbox" id="checkbox-toggle" aria-label="Dropdown Menu Controll Button">
+      <nav class="desktop-navbar">
+        <label for="checkbox-toggle" class="navtext" aria-label="Dropdown Menu Controll Button">
+          <img src="./resources/menu_icon.svg" alt="Menu Icon">
+        </label>
+        <ul>
+          <li><a class="navtext" href="/">Home</a></li>
+          <li><a class="navtext" href="/search">Search Suggestions</a></li>
+          <li><a class="navtext" href="/post">Post Suggestion</a></li>
+        </ul>
+        <span id="nav-span">Friends & Fam: </span>
+      </nav>
     </header>
 
     <main>
-      <section id="news-panel">
-        SECTION: user sees latest recommendations and comments
-      </section>
-      <section id="search-panel">
-        SECTION: user searches for other users' posts or for a particular location or activity
-      </section>
-      <section id="post-panel">
 
+      <section id="topic-post-panel">
+        <h4>Post a New Recommendation:</h4>
+        <form action="/submitNewItem" method="post">
+          <table>
+            <tr>
+              <th>Subject: </th>
+              <td>
+                <input type="text" name="subject" placeholder="Name of place/activity">
+              </td>
+            </tr>
+            <tr>
+              <th>Author: </th>
+              <td>
+                <select name="author">
+                  <option value="Arty">Arty</option>
+                  <option value="Ksenia">Ksenia</option>
+                  <option value="Natasha">Natasha</option>
+                  <option value="Leonia">Leonia</option>
+                  <option value="Julia">Julia</option>
+                  <option value="David">David</option>
+                  <option value="Dasha">Dasha</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>Rating: </th>
+              <td>
+                <input type="number" min="0" max="10" name="rating" placeholder="0-10">
+              </td>
+            </tr>
+            <tr>
+              <th>Review: </th>
+              <td>
+                <textarea name="review"></textarea>
+              </td>
+            </tr>
+          </table>
+          <input id="new-review" type="submit"/>
+        </form>
       </section>
     </main>
 

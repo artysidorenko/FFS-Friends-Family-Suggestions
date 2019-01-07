@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFS - Search Suggestions</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="search.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <header>
+      <input type="checkbox" id="checkbox-toggle" aria-label="Dropdown Menu Controll Button">
+      <nav class="desktop-navbar">
+        <label for="checkbox-toggle" class="navtext" aria-label="Dropdown Menu Controll Button">
+          <img src="./resources/menu_icon.svg" alt="Menu Icon">
+        </label>
+        <ul>
+          <li><a class="navtext" href="/">Home</a></li>
+          <li><a class="navtext" href="/search">Search Suggestions</a></li>
+          <li><a class="navtext" href="/post">Post Suggestion</a></li>
+        </ul>
+        <span>Friends & Fam Suggestions: Search</span>
+      </nav>
+    </header>
+
+    <section id="search-panel">
+      <input id="search-title" type="text" placeholder="Search for Places/Activities"/>
+      <input id="search-author" type="text" placeholder="Search for Author"/>
+      <button id="search-submit">Search</button>
+    </section>
+    <section id="results-panel">
+      <!-- TODO: FFS Remove placeholder search results from html page when finished -->
+      <!-- <h4>Search Results</h4>
+      <a href="#">
+        <table class="result-box">
+          <tr>
+            <td>
+              <strong>Topic: </strong>Nandos
+            </td>
+            <td>
+              <strong>Author: </strong>
+              Arty
+            </td>
+            <td>
+              <strong>Rating: </strong>
+              9
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Review: </strong>
+              123456789012345678901234...
+            </td>
+          </tr>
+        </table>
+      </a>
+      <a href="#">
+        <table class="result-box">
+          <tr>
+            <td>
+              <strong>Topic: </strong>Nandos
+            </td>
+            <td>
+              <strong>Author: </strong>
+              Arty
+            </td>
+            <td>
+              <strong>Rating: </strong>
+              9
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Review: </strong>
+              123456789012345678901234...
+            </td>
+          </tr>
+        </table>
+      </a> -->
+    </section>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+/* FFS SUGGESTIONS WEBPAGE - CUSTOM STYLESHEET */
+
+body {
+  background-color: rgb(200, 188, 162);
+  font-family: Helvetica;
+}
+
+#topic-post-panel > h4   {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px!important;
+}
+
+#topic-post-panel > form > table > tr > th {
+
+}
+
+#topic-post-panel > form > table {
+  padding: 10px;
+}
+
+#topic-post-panel input {
+  width: 90%;
+}
+
+#topic-post-panel textarea {
+  width: 90%;
+}
+
+/****************************/
+/* Styling the navigation bar */
+/****************************/
+
+nav {
+  height: 40px;
+  display: flex;
+  font-weight: bold;
+}
+
+nav>label:hover {
+  cursor: pointer;
+}
+nav > ul {
+  display: none !important;
+}
+nav > span {
+  padding-left: 10px;
+  line-height: 40px;
+}
+
+#checkbox-toggle {
+   display:none;
+ }
+#checkbox-toggle:checked + nav {
+   height: 125px !important;
+}
+#checkbox-toggle:checked ~ nav>ul {
+   display: flex !important;
+   list-style-type: none;
+   flex-direction: column;
+   position: absolute;
+   left: 50px;
+   top: 30px;
+}
+#checkbox-toggle:checked ~ nav>ul>li {
+   list-style-type: none;
+   margin-top: 5px;
+}
+
+#checkbox-toggle:checked ~ nav>ul>li>a {
+   color: inherit;
+   text-decoration: none;
+}
+
+/****************************/
+/* Styling the search page */
+/****************************/
+
+
+
+#results-panel, #search-panel {
+  padding: 10px;
+}
+
+#search-panel > input, #search-panel > button, #new-review {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 25px;
+  margin-top: 5px;
+  font-family: inherit;
+  text-align: center;
+  border: inherit;
+  border-radius: 5px;
+}
+
+#search-panel > button, #new-review {
+  background-color: rgb(185, 52, 34);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#results-panel > h4   {
+  text-align: center;
+  margin: auto;
+}
+
+#results-panel > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.result-box {
+  width: 300px;
+  border: 2px solid rgb(38, 37, 29);
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/****************************/
+/* Styling the topic page */
+/****************************/
+
+#topic-info, #post-panel, #comments-panel {
+  margin: auto;
+}
+
+#topic-info > table, #topic-post-panel > form > table {
+  margin: 10px;
+  border: 2px solid rgb(38, 37, 29);
+  border-radius: 5px;
+  width: 95%;
+}
+
+#topic-info tr, #topic-post-panel tr {
+  vertical-align: top;
+}
+
+#topic-info th, td {
+  padding: 3px;
+}
+
+#topic-post-panel th, td {
+  padding: 3px;
+}
+
+#comments-panel > h4, #post-panel > h4, #topic-post-panel > h4   {
+  text-align: center;
+  margin: auto;
+}
+
+#comments-panel > article {
+  margin: 10px;
+  width: 95%;
+}
+
+#comments-panel > article > u, p {
+  margin: 5px;
+}
+
+#post-panel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#post-panel > textarea {
+  margin: auto;
+  display: block;
+  width: 95%;
+  height: 75px;
+  text-align: center;
+  background-color: rgb(238, 224, 193);
+  border-radius: 5px;
+}
+
+#post-panel > button {
+  display: block;
+  margin: auto;
+  width: 95%;
+  height: 25px;
+  margin-top: 5px;
+  font-family: inherit;
+  text-align: center;
+  border: inherit;
+  border-radius: 5px;
+  background-color: rgb(185, 52, 34);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

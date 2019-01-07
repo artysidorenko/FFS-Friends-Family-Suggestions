@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
 const url = require('url');
-require('env2')('../../config.env');
+require('env2')('./config.env');
 
 let URL_DB = process.env.DB_URL;
 

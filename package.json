@@ -7,7 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm test"
+    "dev": "NODE_ENV=development nodemon src/server.js",
+    "start": "NODE_ENV=production nodemon src/server.js",
+    "test": "nyc npm run 'server tests'",
+    "server tests": "NODE_ENV=test node test/server_tests.js | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -24,5 +27,19 @@
   "bugs": {
     "url": "https://github.com/artysidorenko/FFS-Friends-Family-Suggestions/issues"
   },
-  "homepage": "https://github.com/artysidorenko/FFS-Friends-Family-Suggestions#readme"
+  "homepage": "https://github.com/artysidorenko/FFS-Friends-Family-Suggestions#readme",
+  "devDependencies": {
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.9",
+    "nyc": "^13.1.0",
+    "supertest": "^3.3.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.2"
+  },
+  "dependencies": {
+    "env2": "^2.2.2",
+    "pg": "^7.7.1"
+  }
 }
